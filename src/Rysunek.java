@@ -15,6 +15,8 @@ public class Rysunek extends JPanel {
 		
 		g.setColor(Color.BLACK);
 		g.drawLine(0, 0, 400, 300);
+		g.setColor(Color.BLUE);
+		g.drawLine(100,100,200,200);
 	}
 
 }
