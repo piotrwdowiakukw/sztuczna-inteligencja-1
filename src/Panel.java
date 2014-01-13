@@ -1,6 +1,7 @@
 import java.awt.Container;
 import java.awt.GridLayout;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
@@ -12,16 +13,18 @@ public class Panel {
 	
 	public Panel() {
 		JFrame jFrame = new JFrame();
-		jFrame.setTitle("Sztuczna inteligencja 1");
-		jFrame.setSize(400,300);
+		jFrame.setTitle("Sztuczna inteligencja - prosta");
+		jFrame.setSize(600,600);
 		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		Rysunek rysunek = new Rysunek();
+		Animacja rysunek = new Animacja();
 		Container pane = jFrame.getContentPane();
 		pane.setLayout(new GridLayout(1,1));
 		
 		pane.add(rysunek);
 		jFrame.setVisible(true);
+		
+		
 	}
 	
 }

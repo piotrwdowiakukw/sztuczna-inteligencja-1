@@ -13,7 +13,7 @@ public class Perceptron {
         return waga1;
     }
     public double getWaga2() {
-        return waga2;
+    	return waga2;             
     }
 
     public void setWaga0(double waga0) {
@@ -26,16 +26,18 @@ public class Perceptron {
         this.waga2 = waga2;
     };
 
-    public void Perceptron() {
-        Random rand = new Random();
-        Perceptron(rand.nextDouble(), rand.nextDouble(), rand.nextDouble());
-    }
-
     public void Perceptron(double waga0, double waga1, double waga2) {
         setWaga0(waga0);
         setWaga1(waga1);
         setWaga2(waga2);
     }
+    
+    public Perceptron() {
+        Random rand = new Random();
+        Perceptron(rand.nextDouble(), rand.nextDouble(), rand.nextDouble());
+    }
+
+	
 
     private int licz(double x, double x2){
         double t = x*waga1+x2*waga2 + waga0;
